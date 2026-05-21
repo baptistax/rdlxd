@@ -164,29 +164,3 @@ Posts that were not fully downloaded are listed by Reddit post link so they can 
 
 `rdlxd` does not attempt to bypass Reddit access controls. It prefers OAuth, falls back carefully when auth is unavailable, and reports unsupported content instead of pretending it can resolve every URL.
 
-## Development
-
-Run checks locally:
-
-```sh
-go fmt ./...
-go test ./...
-go vet ./...
-go build ./cmd/rdlxd
-```
-
-## Release
-
-This project is prepared for GoReleaser-based releases.
-
-Snapshot build:
-
-```sh
-goreleaser release --snapshot --clean
-```
-
-Real releases should be created from tags through the release workflow.
-
-## License
-
-Add a license before publishing the repository publicly.
